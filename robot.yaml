@@ -1,0 +1,12 @@
+tasks:
+  Microsoft MFA:
+    robotTaskName: Microsoft MFA
+
+condaConfigFile: conda.yaml
+artifactsDir: output
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+  - .gitignore
