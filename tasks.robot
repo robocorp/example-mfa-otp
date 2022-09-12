@@ -39,10 +39,10 @@ Microsoft MFA
     Use Mfa Secret From Vault    MFA    microsoft_secret
     ${code} =    Get Time Based Otp
     Input Text When Element Is Visible    name:otc    ${code}
-    Click Button    idSubmit_SAOTCC_Continue
+    Click Button When Visible    idSubmit_SAOTCC_Continue
 
     # Remember sign-in.
     Click Element When Visible    //span[contains(text(), 'show this')]
-    Click Element When Visible    ${submit_locator}
+    Click Button When Visible    ${submit_locator}
 
     Go To    https://outlook.office.com/mail/

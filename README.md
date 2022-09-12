@@ -7,7 +7,7 @@ enabled services.
 The common setup flow is as follows:
 1. Login into the web platform as usual, then go to security settings and register a
    new authenticator app (as you normally do with Google Authenticator or Authy).
-2. Proceed through out the instructions and chose "different auth app" if such option
+2. Proceed throughout the instructions and chose "different auth app" if such option
    is available.
 3. You'll get to a QR code which contains a secret key. Obtain the secret and store
    that securely into the Vault.
@@ -19,7 +19,7 @@ The common setup flow is as follows:
    at step **3.** is already done)
 
 Now you should be able to authenticate with your usual credentials and the immediately
-requested OTP without any manual intervention, fully automated.
+requested OTP without any manual intervention, fully automated!
 
 ## Examples
 
