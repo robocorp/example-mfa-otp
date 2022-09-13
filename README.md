@@ -23,3 +23,11 @@ https://mysignins.microsoft.com/security-info
 1. Authenticator app ![Authenticator app](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m2.png)
 1. QR code and secret ![QR code and secret](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m3.png)
 1. Code confirmation ![Code confirmation](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m4.png)
+
+### GitHub
+
+https://github.com/login
+
+1. Configure authenticator app ![Configure authenticator app](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/g1.png)
+1. App setup ![App setup](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/g2.png)
+1. QR code and secret ![QR code and secret](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/g3.png)

@@ -1,6 +1,8 @@
 tasks:
   Microsoft MFA:
     robotTaskName: Microsoft MFA
+  GitHub MFA:
+    robotTaskName: GitHub MFA
 
 condaConfigFile: conda.yaml
 artifactsDir: output
