@@ -19,10 +19,10 @@ Now you should be able to authenticate with your usual credentials and the immed
 
 https://mysignins.microsoft.com/security-info
 
-1. Add a sign-in method ![Add sign-in method](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m1.png)
-1. Authenticator app ![Authenticator app](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m2.png)
-1. QR code and secret ![QR code and secret](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m3.png)
-1. Code confirmation ![Code confirmation](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m4.png)
+1. Add a sign-in method ![Add sign-in method](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/ms1.png)
+1. Authenticator app ![Authenticator app](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/ms2.png)
+1. QR code and secret ![QR code and secret](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/ms3.png)
+1. Code confirmation ![Code confirmation](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/ms4.png)
 
 ### GitHub
 
