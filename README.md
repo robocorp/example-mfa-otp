@@ -23,3 +23,21 @@ https://mysignins.microsoft.com/security-info
 1. Authenticator app ![Authenticator app](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m2.png)
 1. QR code and secret ![QR code and secret](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m3.png)
 1. Code confirmation ![Code confirmation](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/m4.png)
+
+### GitHub
+
+https://github.com/login
+
+1. Configure authenticator app ![Configure authenticator app](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/gh1.png)
+1. App setup ![App setup](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/gh2.png)
+1. QR code and secret ![QR code and secret](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/gh3.png)
+
+### Google
+
+https://accounts.google.com/ServiceLogin
+
+1. 2-Step Verification ![2-Step Verification](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/go1.png)
+1. Authenticator app ![Authenticator app](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/go2.png)
+1. Change authenticator ![Change authenticator](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/go3.png)
+1. QR code ![QR code](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/go4.png)
+1. QR secret ![QR code and secret](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/go5.png)
