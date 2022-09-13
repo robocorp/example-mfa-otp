@@ -2,3 +2,11 @@ MFA:
   microsoft_secret: mt************rr
   microsoft_usr: cosmin-robocorp@ztzvn.onmicrosoft.com
   microsoft_pwd: ****
+
+  github_secret: A**********VA
+  github_usr: cmin764
+  github_pwd: ********
+
+  google_secret: 7m****************************pa
+  google_usr: cosmin@robocorp.com
+  google_pwd: ********

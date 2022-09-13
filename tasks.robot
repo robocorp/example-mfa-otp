@@ -63,3 +63,25 @@ GitHub MFA
     ${code} =    Get Time Based Otp
     # This automatically submits the code.
     Input Text When Element Is Visible    name:otp    ${code}
+
+
+Google MFA
+    # Open browser as normal usage.
+    @{args} =    Create List
+    ...    --user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
+    ...    --disable-dev-shm-usage    --no-sandbox
+    &{options} =    Create Dictionary    arguments    ${args}
+    Open Available Browser    https://accounts.google.com/ServiceLogin
+    ...    options=${options}
+    # Doesn't work even if you attach to your existing browser and profile.
+    # Attach Chrome Browser    9222
+    # Go To    https://accounts.google.com/ServiceLogin
+
+    # This gets to a page detecting and blocking automation.
+    Input Text When Element Is Visible    id:identifierId    ${SECRETS}[google_usr]
+    Click Element When Visible    //span[contains(text(), 'Next')]
+
+    # FIXME: Complete the login process if allowed.
+    Use Mfa Secret From Vault    MFA    google_secret
+    ${code} =    Get Time Based Otp
+    Log To Console    Would fill in code: ${code}
