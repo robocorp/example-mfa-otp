@@ -26,7 +26,7 @@ https://mysignins.microsoft.com/security-info
 
 ### GitHub
 
-https://github.com/login
+https://github.com/settings/security
 
 1. Configure authenticator app ![Configure authenticator app](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/gh1.png)
 1. App setup ![App setup](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/gh2.png)
@@ -34,7 +34,7 @@ https://github.com/login
 
 ### Google
 
-https://accounts.google.com/ServiceLogin
+https://myaccount.google.com/security
 
 1. 2-Step Verification ![2-Step Verification](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/go1.png)
 1. Authenticator app ![Authenticator app](https://github.com/robocorp/example-mfa-otp/raw/master/devdata/screens/go2.png)
