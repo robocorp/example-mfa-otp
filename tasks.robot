@@ -66,8 +66,7 @@ GitHub MFA
 
 
 Google MFA
-    # Login as close as you can to usual human browsing. (by attaching to a normally
-    #  opened browser)
+    # Do not let Google detect automation while logging in.
     Evaluate    setattr(selenium.webdriver, "Chrome", undetected_chromedriver.Chrome)
     ...    modules=selenium.webdriver,undetected_chromedriver
     Open Browser    https://accounts.google.com/ServiceLogin    browser=Chrome
