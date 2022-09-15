@@ -66,22 +66,25 @@ GitHub MFA
 
 
 Google MFA
-    # Open browser as normal usage.
-    @{args} =    Create List
-    ...    --user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
-    ...    --disable-dev-shm-usage    --no-sandbox
-    &{options} =    Create Dictionary    arguments    ${args}
-    Open Available Browser    https://accounts.google.com/ServiceLogin
-    ...    options=${options}
-    # Doesn't work even if you attach to your existing browser and profile.
-    # Attach Chrome Browser    9222
-    # Go To    https://accounts.google.com/ServiceLogin
+    # Do not let Google detect automation while logging in.
+    Evaluate    setattr(selenium.webdriver, "Chrome", undetected_chromedriver.Chrome)
+    ...    modules=selenium.webdriver,undetected_chromedriver
+    Open Browser    https://accounts.google.com/ServiceLogin    browser=Chrome
 
-    # This gets to a page detecting and blocking automation.
+    # Fill in username & password.
     Input Text When Element Is Visible    id:identifierId    ${SECRETS}[google_usr]
-    Click Element When Visible    //span[contains(text(), 'Next')]
+    ${next_button} =    Set Variable    //span[contains(text(), 'Next')]
+    Click Element When Visible    ${next_button}
+    Input Text When Element Is Visible    name:Passwd    ${SECRETS}[google_pwd]
+    Click Element When Visible    ${next_button}
 
-    # FIXME: Complete the login process if allowed.
+    # Proceed through MFA.
+    Click Element When Visible    //span[contains(text(), 'another way')]
+    Click Element When Visible    //div[contains(text(), 'code from the')]
     Use Mfa Secret From Vault    MFA    google_secret
     ${code} =    Get Time Based Otp
-    Log To Console    Would fill in code: ${code}
+    ${otp_field} =    Set Variable    //input[@type='tel']
+    Input Text When Element Is Visible    ${otp_field}    ${code}
+    Press Keys    ${otp_field}    RETURN
+
+    Go To    https://myaccount.google.com/
