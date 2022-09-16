@@ -72,6 +72,8 @@ Google MFA
     Open Browser    https://accounts.google.com/ServiceLogin    browser=Chrome
 
     # Fill in username & password.
+    Reload Page
+    Wait For Condition    return document.readyState == "complete"
     Input Text When Element Is Visible    id:identifierId    ${SECRETS}[google_usr]
     ${next_button} =    Set Variable    //span[contains(text(), 'Next')]
     Click Element When Visible    ${next_button}
