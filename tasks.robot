@@ -66,10 +66,16 @@ GitHub MFA
 
 
 Google MFA
+    [Setup]    Set Selenium Timeout    10
+
     # Do not let Google detect automation while logging in.
     Evaluate    setattr(selenium.webdriver, "Chrome", undetected_chromedriver.Chrome)
     ...    modules=selenium.webdriver,undetected_chromedriver
-    Open Browser    https://accounts.google.com/ServiceLogin    browser=Chrome
+    # And make sure we have a webdriver available. (for CR runs)
+    ${webdriver_path} =    Evaluate    RPA.core.webdriver.download("Chrome")
+    ...    modules=RPA.core.webdriver
+    Open Browser    https://accounts.google.com/ServiceLogin    browser=chrome
+    ...    executable_path=${webdriver_path}
 
     # Fill in username & password.
     Reload Page
