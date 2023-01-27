@@ -69,8 +69,8 @@ Google MFA
     [Setup]    Set Selenium Timeout    10
 
     # Do not let Google detect automation while logging in.
-    Evaluate    setattr(selenium.webdriver, "Chrome", undetected_chromedriver.Chrome)
-    ...    modules=selenium.webdriver,undetected_chromedriver
+    Evaluate    setattr(selenium.webdriver, "Chrome", undetected_chrome.Chrome)
+    ...    modules=selenium.webdriver,undetected_chrome
     # And make sure we have a webdriver available. (for CR runs)
     ${webdriver_path} =    Evaluate    RPA.core.webdriver.download("Chrome")
     ...    modules=RPA.core.webdriver
